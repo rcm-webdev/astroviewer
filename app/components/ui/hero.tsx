@@ -24,7 +24,7 @@ export function Hero() {
   };
 
   return (
-    <AuroraBackground>
+    <AuroraBackground className="relative">
       <motion.div
         initial={{ opacity: 0.0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -57,10 +57,10 @@ export function Hero() {
             onSubmit={onSubmit}
           />
         </div>
-        <div>
-          <ThemeToggle />
-        </div>
       </motion.div>
+      <div className="absolute top-0 right-0 m-4">
+        <ThemeToggle />
+      </div>
     </AuroraBackground>
   );
 }
