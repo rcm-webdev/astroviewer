@@ -38,9 +38,9 @@ export function Bento() {
         "col-span-1 lg:col-span-3 lg:border-r  dark:border-neutral-800",
     },
     {
-      title: "Deploy in seconds",
+      title: "Connected Security Solutions",
       description:
-        "With our blazing fast, state of the art, cutting edge, we are so back cloud servies (read AWS) - you can deploy your model in seconds.",
+        "Leveraging global advancements in technology to bring you the most reliable and effective security systems in Boise.",
       skeleton: <SkeletonFour />,
       className: "col-span-1 lg:col-span-3 border-b lg:border-none",
     },
@@ -134,7 +134,7 @@ export const SkeletonOne = () => {
         <div className="flex flex-1 w-full h-full flex-col space-y-2  ">
           {/* TODO */}
           <Image
-            src="/linear.webp"
+            src="/map.png"
             alt="header"
             width={800}
             height={800}
@@ -252,7 +252,7 @@ export const SkeletonFour = () => {
   return (
     <div className="h-60 md:h-60  flex flex-col items-center relative bg-transparent dark:bg-transparent mt-10">
       <Globe className="absolute -right-10 md:-right-10 -bottom-80 md:-bottom-72" />
-      <Meteors number={20} />
+      {/* <Meteors number={20} /> */}
     </div>
   );
 };
@@ -280,9 +280,10 @@ export const Globe = ({ className }: { className?: string }) => {
       glowColor: [1, 1, 1],
       markers: [
         // longitude latitude
-        { location: [37.7595, -122.4367], size: 0.03 },
-        { location: [48.7128, -74.006], size: 0.1 },
-        { location: [70.8128, -84.006], size: 0.05 },
+        { location: [43.618881, -116.215019], size: 0.03 },
+        { location: [43.565468, -116.560822], size: 0.03 },
+        { location: [42.562786, -114.460503], size: 0.03 },
+        { location: [43.49165, -112.033966], size: 0.03 },
       ],
       onRender: (state) => {
         // Called on every animation frame.
