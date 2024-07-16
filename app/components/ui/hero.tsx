@@ -12,6 +12,7 @@ export function Hero() {
     "What's the first rule of Stargazer's Club?",
     "July 8, 1947",
     "July 20, 1969",
+    "April 1, 2023",
     "July 15, 2024",
   ];
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
