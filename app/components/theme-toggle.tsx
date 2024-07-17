@@ -8,6 +8,8 @@ export function ThemeToggle() {
   const { setTheme, theme } = useTheme();
   return (
     <button
+      aria-label="toggle theme"
+      aria-details="ligt mode versus dark mode"
       className="relative inline-flex"
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
     >
