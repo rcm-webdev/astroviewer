@@ -10,10 +10,10 @@ import {
 import { useRef } from "react";
 import { cn } from "@/lib/utils";
 
-export function Button({
+export function ToggleWrapper({
   borderRadius = "1.75rem",
   children,
-  as: Component = "button",
+  as: Component = "div",
   containerClassName,
   borderClassName,
   duration,
@@ -56,7 +56,7 @@ export function Button({
 
       <div
         className={cn(
-          "relative bg-gradient-to-r from-[#16222A] to-[#3A6073] border border-[#292E49] backdrop-blur-xl flex items-center justify-center w-full h-full antialiased",
+          "relative bg-gradient-to-r from-[#16222A] to-[#3A6073] border border-neutral-950 backdrop-blur-xl flex items-center justify-center w-full h-full antialiased",
           className
         )}
         style={{

@@ -2,7 +2,7 @@
 
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
-import { Button } from "./ui/moving-border";
+import { ToggleWrapper } from "./ui/moving-border";
 
 export function ThemeToggle() {
   const { setTheme, theme } = useTheme();
@@ -11,7 +11,7 @@ export function ThemeToggle() {
       className="relative inline-flex"
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
     >
-      <Button>
+      <ToggleWrapper>
         <Sun
           size="28"
           className="transition-all scale-100 rotate-0 dark:-rotate-90 dark:scale-0"
@@ -23,7 +23,7 @@ export function ThemeToggle() {
           color="white"
         />
         <span className="sr-only">Toggle theme</span>
-      </Button>
+      </ToggleWrapper>
     </button>
   );
 }
